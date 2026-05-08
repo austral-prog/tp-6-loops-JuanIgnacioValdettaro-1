@@ -9,7 +9,13 @@ def countdown(n):
     Ejemplo: countdown(0) -> [0]
     Ejemplo: countdown(-1) -> []
     """
-    return "ANSWER HERE"  # Remove this line and implement
+    r= []
+    i=0
+    while i<=n and n>=0:
+        r.append(i)
+        i+=1
+
+    return r[::-1] # Remove this line and implement
 
 
 def double_until(limit):
@@ -22,4 +28,10 @@ def double_until(limit):
     Ejemplo: double_until(1) -> [1]
     Ejemplo: double_until(0) -> []
     """
-    return "ANSWER HERE"  # Remove this line and implement
+    r=[]
+    i=1
+    while i<=limit:
+        r.append(i)
+        i=i*2
+
+    return r   # Remove this line and implement
